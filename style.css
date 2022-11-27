@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* register start */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    display: flex;
+
+}
+
+.navbar-brand i {
+    font-size:32px;
+    margin-right: 12px;
+    margin-left: 16px;
+}
+
+.navbar-symbol{
+    font-size: 32px;
+
+}
+
+.dropdown{
+    margin-right: 80px;
+}
+
+
+/* btn */
+.btn_custom{
+
+  background: linear-gradient(to right,#a2ccb6 0%,#fceeb5 50%,#ee786e 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  color: #fff;
+  cursor: pointer;
+  font: 1.5em Raleway, sans-serif;
+  letter-spacing: .05em;
+  outline: none;
+  width: 220px;
+  height: 50px;
+
+}
+
+.btn:hover{
+    animation-name: gradient;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes gradient{
+
+    0% {
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% ;
+    }
+}
+/* file button */
+input[type=file]::file-selector-button {
+    border-radius: 8px;
+    border-color: transparent;
+    background-color:#4becc9;
+    color: #22459c;
+}
+
+input[type=file]::file-selector-button:hover{
+    cursor:pointer;
+    background-color:#3fbea3;
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 60px;
+    max-height: 200px;
+    text-align:center;
+    padding-top:12px;
+}
+
+
+/*User */
+.user-login{
+    display:flex;
+
+}
+.user-img{
+    width: 30px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.user-img:hover{
+    cursor: pointer;
+}
+
+
+
+/* form */
+
+form{
+    height: 100vh;
+    padding-top:64px;
+    padding-bottom: 64px;
+}
+
+.sub-desc{
+    text-align:right; 
+    font-size:24px;
+}
+
+.menu-icon{
+    display:none;
+}
+
+
+
+
+
+
+/* register end */
+
+
+/* error message */
+
+.error-message{
+    color: rgb(235, 47, 47);
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+
+.error-input{
+    border: 1px solid rgb(235, 47, 47);
+}
+
+
+
+
+
+.custom-control{
+    margin-left:20%;
+}
+
+.form{
+    height: 90vh;
+}
+.button-form{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+
+.custom-control{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.formRegister{
+    margin-bottom: 400px;
+}
+
+.fake-btn{
+    text-decoration:none;
+}
+
+
+
+
+#moneyForm,
+.updateForm{
+    padding:0;
+    height:unset;
+    
+}
+
+
+
+/* After transfer */
+.main{
+    width: 100%;
+    max-height: 100vh;
+    
+}
+.content{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:14%;
+    width: 45%;
+    height: 50%;
+    background-color:white;
+    position: relative;
+    border:4px solid greenyellow;
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+.after_transfer{
+    margin-top: 5%;
+    margin-left: 1%;
+    color: rgb(28, 162, 33);
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.after_transfer--money{
+    text-align: center;
+    font-size: 32px;
+    margin-top:1%;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.after_transfer--name{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    margin-top:1%;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.button-groups{
+    text-align: center;
+}
+
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:24px;
+}
+
+.td, .th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+.td{
+    font-weight: 500;
+}
+
+
+.header_table{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top:24px;
+
+}
+
+.btn_home{
+    margin-left:75%;
+    font-size: 28px;
+}
+
+.dropdown{
+    margin: 0;
+}
+
+.card{
+    overflow:hidden;
+
+}
+
+.card-info:hover{
+    cursor:pointer;
+    transform:translateY(-2%);
+    transition:transform .5s ease-in-out;
+}
+
+.card-text{
+    overflow:hidden;
+    display:block;
+    display :-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 4;
+}
+
+.adminActionList{
+    list-style:none;
+}
+
+.adminActionList li{
+    margin-top: 12px;
+    text-align:center;
+}
+
+.adminActionListHeader{
+    text-align:center;
+    margin-top:20px;
+}
+
+.tableList{
+    overflow-x: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+@media screen and (max-width:720px){
+    .sub-desc{
+        margin: 0;
+        padding-top: 12px;
+        font-size: 24px;
+        padding-right: 12px;
+    }
+
+    .footer-font{
+        font-size:16px;
+    }
+
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0; 
+        background:#333;
+        width:100%;
+        overflow: hidden;
+        transition:max-height 0.5s;
+        
+    }
+
+    .menuItems{
+        padding-left: 24px;
+        font-size: 24px;
+        z-index:100;
+    }
+
+    .dropdown-menu{
+        background:#333;
+        width: 85%;
+        margin-top: 0;
+        border: none;
+    }
+
+    .dropdown-item{
+        color: rgb(148, 146, 146);
+        font-size: 20px;
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+    nav ul li{
+        display:block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    
+    .menu-icon{
+        display:block;
+        cursor: pointer;
+    }
+
+
+    .transferBtn{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+
+    .btn-sub{
+        margin-bottom: 10px;
+    }
+    .btn_custom{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .button-form{
+        display:block;
+    }
+    .input-items{
+        margin-left: 0px;
+    }
+
+    .menuItems{
+        max-height: 0;
+        transition:max-height 0.8s ease-in-out;
+    }
+
+}
